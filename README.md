@@ -5,6 +5,6 @@
 
 To login to tumblr
 
-TumblrUtils::Login.login(browser, password, browser)
+Tumblr::Login.login(browser, password, browser)
 
 
