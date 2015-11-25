@@ -1,10 +1,13 @@
-#Watir-Selenium
+#Watir-Selenium Tumblr Automation
 
 ##Decription:
-###This project demonstrates Watir-Api used to automate Tumblr login from YML file\n As well as posting a blog and verfiying it after
+###This project demonstrates Watir-Browser-Api to automate Tumblr login from YML file. As well as posting to a blog and verfiying it on the tumblr dashboard
 
-To login to tumblr
+####Usage:
+######Configure the form.yml file and replace the email and password with your tumblr credentials
 
-Tumblr::Login.login(browser, password, browser)
-
+####Program Structure:
+######UtilTumblr::Browser_Initialize.login(browser, password, browser)
+######UtilTumblr::Browser_Initialize.post_blog(browser)
+######UtilTumblr::Browser_Initialize.verify_blog(browser)
 
