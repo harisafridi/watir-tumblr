@@ -26,6 +26,6 @@ module UtilTumblr
     browser.goto "https://www.tumblr.com/blog/afridiharis"
     browser.div(class: "post_control").click
     browser.div(class: "post_control delete").click
-    browser.button(class: "ui_button").click
+    browser.button(class: "chrome blue").click
   end
 end
