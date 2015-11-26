@@ -11,7 +11,7 @@ module UtilTumblr
     text.send_keys("Title here\tparagraph here")
   end
   def verify_blog(browser)
-    post_button = browser.button(class: "create_post_button").click
+    browser.button(class: "create_post_button").click
     post_body = browser.elements(class: "post_body")
     found = false
     post_body.each do |o| 
@@ -24,8 +24,8 @@ module UtilTumblr
   end
    def delete_blog(browser)
     browser.goto "https://www.tumblr.com/blog/afridiharis"
-    spanner_icon = browser.div(class: "post_control").click
-    delete_option  = browser.div(class: "post_control delete").click
-    confirm_ok = browser.button(class: "ui_button").click
+    browser.div(class: "post_control").click
+    browser.div(class: "post_control delete").click
+    browser.button(class: "ui_button").click
   end
 end
