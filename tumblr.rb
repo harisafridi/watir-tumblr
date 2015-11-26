@@ -13,5 +13,6 @@ class Browser_Initialize
    Browser_Initialize.new.login(email, password, browser)
    Browser_Initialize.new.post_blog(browser)
    Browser_Initialize.new.verify_blog(browser)
+   Browser_Initialize.new.delete_blog(browser)
    browser.close
 end
