@@ -24,8 +24,8 @@ module UtilTumblr
   end
    def delete_blog(browser)
     browser.goto "https://www.tumblr.com/blog/afridiharis"
-    delete = browser.div(class: "post_control").click
-    delete = browser.div(class: "post_control delete").click
-    ok = browser.button(class: "ui_button").click
+    spanner_icon = browser.div(class: "post_control").click
+    delete_option  = browser.div(class: "post_control delete").click
+    confirm_ok = browser.button(class: "ui_button").click
   end
 end
